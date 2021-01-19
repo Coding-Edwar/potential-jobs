@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./dist/tailwind.css">    
+    <title>Job Tracker</title>
+</head>
+<body>
+
+<!-- Header  -->
+<div class="flex flex-row justify-center w-screen bg-blue-400 p-5 overflow-auto items-center">
+    <nav>
+        <ul class="space-x- flex p-5">
+            <div class="p-10 hover:bg-blue-500">
+                <img src="./img/logo-arrows.png" alt="logo-arrows">
+            </div>
+            <div class="bg-green-500 p-10 hover:bg-blue-500">
+                <h1>JobTracker</h1>
+            </div>
+            <div class="bg-yellow-500 p-10 hover:bg-blue-500">
+                <li><a href="./login-register.html">Login/Register</a></li>
+            </div>
+          </ul>
+    </nav>
+</div>
+<!-- End of Header  -->
+
+
+<!-- Main section  -->
+<div class="bg-purple-500 h-screen flex flex-col justify-center items-center">
+    <div class="p-5">
+        <h3>Welcome to the Job Tracker</h3>
+    </div>
+    <div>
+        <a href="./login-register.html">
+            <button class="rounded bg-blue-300 hover:bg-blue-500 p-10" id="search">
+                <div>
+                    <img width="70" height="38" src="img/searchIconIverted.png"alt="searchIcon">
+                </div>
+                <div>
+                    Search
+                </div>
+            </button>
+        </a>
+    </div>
+</div>
+<!-- End of main section  -->
+
+<!-- footer  -->
+
+<!-- Adding Social Media Buttons  -->
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="flex justify-center w-screen bg-red-600 p-5 overflow-auto items-center">
+    <!-- <a href="#"><i id="linkedin" class="fa fa-linkedin"></i></a> -->
+    <a href="#"><i id="linkedin" class="fa fa-linkedin hover:bg-blue-500"></i></a>
+    <a href="#"><i id="twitter" class="fa fa-twitter"></i></a>
+    <a href="#"><i id="facebook" class="fa fa-facebook"></i></a>
+    <a href="#"><i id="instagram" class="fa fa-instagram hover:bg-blue-500"></i></a>
+</div>
+
+<div class="flex justify-center w-screen">
+    <h3>Copyright 2021</h3>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
