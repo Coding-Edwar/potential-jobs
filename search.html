@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/tailwind.css">
+    <title>Job Tracker</title>
+</head>
+<body>
+    
+    <!-- Header  -->
+    <div>
+        <div>
+        <!-- Testing branch feat/header  -->
+        </div>
+    </div>
+    
+<!--     main section  -->
+<!--    search page-->
+    <div class="bg-blue-400 border-b-2 fixed border-black shadow-lg h-24 w-screen p-2" id="searchPage1" >
+        <form>
+            <label for="keyword1" class="m-8">Search for Jobs</label>
+            <input id="keyword1" name="keyword1" type="text" placeholder="Enter search keyword" class="p-2 ml-6 mr-2 w-1/3">
+            
+            <label for="location1"></label>
+            <input id="location1" name="location1" type="text" placeholder="Enter location" class="p-2 ml-2 mr-6 w-1/3">
+            
+            <button class="bg-green-700 rounded p-3 hover:bg-yellow-900 focus:-translate-x-1.5">
+                Search now
+            </button>
+        </form>
+    </div>
+    
+    <div class="h-screen m-12 p-2 flex flex-col" id="searchPage" >
+         <form class="p-12 rounded bg-blue-900 m-16 h-96 w-96 flex whitespace-nowrap flex-col" id="form">
+             <div class="m-8 bg-white py-2 w-64 h-16 rounded shadow-lg text-center text-3xl">Search for Jobs</div>
+             
+             <label for="keyword"></label>
+             <input id="keyword" name="keyword" placeholder="Enter search keyword" class="bg-gray-300 p-2 my-2">
+             <label for="location"></label>
+             <input id="location" name="location" placeholder="Enter City, State" class="bg-gray-300 p-2 my-2">
+             
+             <button class="bg-green-700 m-8 text-white text-3xl rounded p-3 hover:bg-yellow-900 w-52 h-16" id="submit">
+                 Search now
+             </button>
+             
+         </form>
+    </div>
+    <div class="hidden bg-green-500 border-2 border-black m-2 p-2" id="display">
+
+    </div>
+    <!-- footer  -->
+    <div>
+    <!---test-->
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
+
+search.html 

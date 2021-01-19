@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./dist/tailwind.css">
+    <title>Some Adzuna Play - Understanding APIs</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 12 - Day 05 - My Playful Jobs</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+<!-- Header  -->
+<div class="flex flex-row justify-center w-screen bg-blue-400 p-5 overflow-auto items-center">
+    <nav>
+        <ul class="space-x- flex p-5">
+            <div class="p-10 hover:bg-blue-500">
+                <a href="./index.html"><img src="./img/logo-arrows.png" alt="logo-arrows"></a>
+            </div>
+            
+                <h1 class="bg-green-500 p-10 hover:bg-blue-500">JobTracker</h1>
+           
+                <a href="./login-register.html" class="bg-yellow-500 p-10 hover:bg-blue-500">Logout</a>
+           
+        </ul>
+    </nav>
+</div>
+<!-- End of Header  -->
+
+<div class="bg-blue-400 border-b-2 fixed border-black shadow-lg h-24 w-screen p-2" id="app" >
+    
+    <form id="search-form" >
+        <h2 class="">Search Form</h2>
+        <label for="job-type"></label>
+        <input id="job-type" name="keyword1" type="text" placeholder="Enter search keywords" class="p-2 w-1/3">
+        
+<!--        <label for="location1"></label>-->
+<!--        <input id="location1" name="location1" type="text" placeholder="Enter location" class="p-2 ml-2 mr-6 w-1/3">-->
+        
+        <button class="bg-green-700 rounded p-3 hover:bg-yellow-900 focus:-translate-x-1.5">
+            Search now
+        </button>
+    </form>
+    
+    
+    <h2 class="my-8">Jobs Found</h2>
+    <hr />
+    
+    <div id="result-section"></div>
+</div>
+
+
+<!--<style>-->
+<!--    /**-->
+<!--    Since the API adds a <strong> a small "fun" element-->
+<!--     */-->
+<!--    strong {-->
+<!--        background-color: #f8ff00;-->
+<!--    }-->
+<!--    -->
+<!--</style>-->
+<!--<div id="app">-->
+<!--    <h2>Search Form</h2>-->
+<!--    <hr />-->
+<!--    <form id="search-form">-->
+<!--        <input-->
+<!--                type="text"-->
+<!--                id="job-type"-->
+<!--                placeholder="What are you looking for?"-->
+<!--        />-->
+<!--        <input type="submit" value="Search" id="submit" />-->
+<!--    </form>-->
+
+<!--    <hr />-->
+<!--    <h2>Jobs Found</h2>-->
+<!--    <hr />-->
+<!--    <div id="result-section"></div>-->
+<!--</div>-->
+
+<script src="./search.js"></script>
+
+</body>
+</html>
