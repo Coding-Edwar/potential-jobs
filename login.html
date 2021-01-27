@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="dist/tailwind.css">
+    <link rel="stylesheet" href="/dist/tailwind.css">
     <title>Form Validation</title>
 </head>
 <body>
 
-<form id="form" action="./search-list.html">
+<form id="form" action="/search-list.html">
 
 	<div class="bg-gray-300 h-screen flex justify-center items-center">
 	
 		<div id="my-form" class="bg-blue-300 bg-opacity-80 p-10 rounded-3xl border-4 border-black">
 			
 			<div class="p-2 font-bold flex flex-col">
-				<label for="username">Username</label>
+				<label for="username">Name or Email</label>
 				<input type="text" id="username" name="username" class="base-input">
 				<!-- <small class="hidden m-5 p-1 text-red-500">❌ Please enter your username</small> -->
 					<div></div>
@@ -25,7 +24,7 @@
 			</div>
 			
 			
-			<div id="my-email" class="p-2 font-bold flex flex-col">
+			<div id="my-email" class="p-2 font-bold flex flex-col hidden">
 				<label for="email">Email</label>
 				<input type="text" id="email" name="email" class="base-input">
 				<!-- <small class="hidden m-5 p-1 text-red-500">❌ Please enter your email</small> -->
@@ -42,7 +41,7 @@
 				</div>
 			
 			
-			<div id="my-password-2" class="p-2 font-bold flex flex-col">
+			<div id="my-password-2" class="p-2 font-bold flex flex-col hidden">
 				<label for="confirm_password">Confirm Password</label>
 				<input type="password" id="password2" name="password2" class="base-input">
 					<div>
@@ -51,9 +50,9 @@
 					
 			    </div>
 			
-					<!-- <a href="./search-list.html"> -->
+					<!-- // <a href="/search-list.html"> -->
 					<button id="bttn" class="mt-4 ml-40 green-btn">Register</button>
-				<!-- </a> -->
+				<!-- // </a> -->
 				
 		</div>
 	
@@ -61,6 +60,6 @@
 	
 </form>
 
-<script src="./login-app.js"></script>
+<script src="/login-app.js"></script>
 </body>
 </html>
