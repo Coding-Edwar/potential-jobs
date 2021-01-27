@@ -23,7 +23,7 @@ form.addEventListener('submit', function () {
 
 // mylink.innerHTML=`$`
 
-//   `<a href="./search-display.html"></a>`
+//   `<a href="./search-list.html"></a>`
 
   validateEmpty(username)
   validateEmpty(email)
