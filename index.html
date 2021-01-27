@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/dist/tailwind.css">    
     <title>Job Tracker</title>
@@ -11,7 +11,11 @@
 <!-- header  -->
 <div class="w-screen p-5 bg-blue-400 md:flex justify-between">
     <div class="w-max p-10">
-        <a href="/index.html"><p class="p-10 bg-gray-300 border-4 rounded-xl border-black text-6xl font-bold text-right">Potential <br>👨🏾‍💻 Jobs</p></a>
+        <a href="/index.html">
+            <p class="p-10 bg-gray-300 border-4 rounded-xl border-black text-6xl font-bold text-left">Potential<br>Jobs 
+                <span class="ml-6">👨🏾‍💻</span>
+            </p>
+        </a>
     </div>                  
     <div class="m-6 mt-14 flex flex-col items-center space-y-6">
         <a href="/login.html">
@@ -27,12 +31,12 @@
 <!-- main section  -->
 <div class="w-screen">
 
-    <div class="md:flex items-center justify-between">
+    <div class="md:flex items-center justify-evenly">
         <div class="m-16 p-4 pl-40 text-9xl">
             👨🏾‍💻
         </div>
         <div class="p-10">
-            <p class="order-1 justify-end text-8xl font-bold text-right">Your List of<br>  Potential<br> Jobs</p>
+            <p class="w-max text-8xl font-bold text-left">Your List of<br>  Potential<br> Jobs</p>
         </div>
     </div>
 
@@ -41,7 +45,7 @@
         <table class="text-left bg-gray-300">
             <thead>
                 <tr>
-                    <th class="m-4 p-6 px-20 bg-blue-400 rounded-t-xl text-center text-black text-4xl  focus:outline-none focus:ring-0">Frontend Engineer Listings
+                    <th class="m-4 p-6 px-20 bg-blue-400 rounded-t-xl text-center text-black text-4xl  focus:outline-none focus:ring-0">Fullstack Engineer Listing
                     </th>           
                 </tr>
             </thead>
@@ -52,7 +56,7 @@
                 <td class="w-full flex">
                         <div class="w-full p-2 flex items-center justify-evenly">
                             <a href="/login.html" class="w-full mr-6 flex items-center">
-                                <div class="w-44 mr-6">Job Tiltle 1</div>
+                                <div class="w-48 mr-6">Job Tiltle 1</div>
                                 <div class="pl-4">Job Summary <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi officia reiciendis sequi cupiditate vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>                    
                             </a>
 
@@ -66,7 +70,7 @@
                 <td class="w-full flex">  
                     <div class="w-full p-2 flex items-center justify-evenly">
                         <a href="/login.html" class="w-full mr-6 flex items-center">
-                            <div class="w-44 mr-6">Job Tiltle 2</div>
+                            <div class="w-48 mr-6">Job Tiltle 2</div>
                             <div class="pl-4">Job Summary <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi officia reiciendis sequi cupiditate vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                             </div>                    
                         </a>
@@ -81,7 +85,7 @@
                 <td class="w-full flex">
                     <div class="w-full p-2 flex items-center justify-evenly">
                         <a href="/login.html" class="w-full mr-6 flex items-center">
-                            <div class="w-44 mr-6">Job Tiltle 3</div>
+                            <div class="w-48 mr-6">Job Tiltle 3</div>
                             <div class="pl-4">Job Summary <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi officia reiciendis sequi cupiditate vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>                    
                         </a>
 
@@ -96,7 +100,7 @@
                         
                     <div class="w-full p-2 flex items-center justify-evenly">
                         <a href="/login.html" class="w-full mr-6 flex items-center">
-                            <div class="w-44 mr-6">Job Tiltle 4</div>
+                            <div class="w-48 mr-6">Job Tiltle 4</div>
                             <div class="pl-4">Job Summary <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi officia reiciendis sequi cupiditate vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>                    
                         </a>
 
@@ -110,7 +114,7 @@
                 <td class="w-full flex">
                     <div class="w-full p-2 flex items-center justify-evenly">
                         <a href="/login.html" class="w-full mr-6 flex items-center">
-                            <div class="w-44 mr-6">Job Tiltle 5</div>
+                            <div class="w-48 mr-6">Job Tiltle 5</div>
                             <div class="pl-4">Job Summary <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nisi officia reiciendis sequi cupiditate vero. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>                    
                         </a>
 
@@ -140,11 +144,13 @@
         </thead>
         </table>
     </div>
+
     <!-- network caption -->
-    <div class="md:flex justify-evenly sm:-space- items-center overflow-ellipsis">
+    <div class="md:flex justify-evenly items-center overflow-ellipsis">
         <div class="md:w-96 sm:w-full h-52 pl-4 overflow-y-hidden text-5xl font-semibold">            
             Connect with others tracking their potential jobs, like you!           
         </div>
+        
         <!-- list scroll-overflow -->
         <table class="md:w-1/2 sm:w-full bg-gray-300 text-left"> 
             <tbody class="flex flex-col justify-between overflow-y-scroll h-48">
@@ -227,8 +233,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <div class="flex justify-center w-screen bg-gray-300 p-5 overflow-auto items-center">
-        <a href="#"><i id="linkedin" class="fa fa-linkedin"></i>
-        </a>
         <a href="#"><i id="linkedin" class="fa fa-linkedin hover:bg-blue-500"></i>
         </a>
         <a href="#"><i id="twitter" class="fa fa-twitter"></i>
