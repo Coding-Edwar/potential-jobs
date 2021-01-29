@@ -8,7 +8,7 @@ function authStateListener() {
             // console.log(user)
         } else {
         // user non-exist
-        window.location.href = "/index.html"
+        window.location.href = "/search-list.html"
         }
     })
 }
