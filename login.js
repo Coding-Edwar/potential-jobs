@@ -26,5 +26,7 @@
     const name = name.value
     const pass = password.value
     const auth = firebase.auth
+    // sign in
+    const promise = auth.singG
   })
 }());
