@@ -4,16 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/dist/tailwind.css">
-    <title>Search Results List</title>
-</head>
-<body>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Week 12 - Day 05 - My Playful Jobs</title>
-    <meta charset="UTF-8" />
+    <title>Potential Jobs - List</title>
 </head>
 
 <body>
@@ -21,7 +14,7 @@
 <div class="w-screen p-5 bg-blue-400 md:flex justify-between">
     <div class="w-max p-10">
         <a href="/index.html">
-            <p class="p-10 bg-gray-300 border-4 rounded-xl border-black text-6xl font-bold text-left">Potential<br>Jobs 
+            <p class="p-10 bg-gray-300 rounded-xl shadow-xl text-6xl font-bold text-left">Potential<br>Jobs 
                 <span class="ml-6">👨🏾‍💻</span>
             </p>
         </a>
@@ -43,7 +36,9 @@
     <form id="search-form" class="p-8 bg-blue-300 shadow-lg flex justify-center items-center space-x-6" >
 
         <label for="job-type"></label>
-        <input id="job-type" name="keyword1" type="text" placeholder="🔍 job tiltle or keywords" class="p-2 mt-1 w-72 rounded-3xl shadow-lg border-2 border-gray-500 text-left focus:outline-none focus:ring-0;">
+        <input id="job-type" name="keyword1" type="text" 
+        value="software engineer"
+        placeholder="🔍 job tiltle or keywords" class="p-2 mt-1 w-72 rounded-3xl shadow-lg border-2 border-gray-500 text-left focus:outline-none focus:ring-0;">
         <button 
         class="w-max p-2 px-4 h-12 bg-yellow-300 box-border rounded-2xl shadow-lg text-lg text-center focus:outline-none focus:ring-0 transform hover:bg-green-400 hover:text-white transition duration-500 ease-in-out">
             Search Jobs
@@ -53,35 +48,39 @@
 <!-- // END subHeader -->
 
 <!-- job results list -->
-<div class="flex flex-col">
+<div class="flex items-center justify-center">
+    <div class="flex flex-col">
 
-    <div id="result-section" class="box-border"></div>
+        <div class="h-max">
+            <div id="result-section" class="h-full flex flex-col overflow-y-scroll">Some Jobes</div>
+        </div>
 
-    <div class="flex self-end">
-        <!-- loading .gif -->
-        <a href="/details.html">
-            <button class="m-8 p-2 px-4 h-12 bg-blue-400 rounded-2xl shadow-lg text-lg text-center focus:outline-none focus:ring-0 transform hover:bg-green-400 hover:text-white transition duration-500 ease-in-out">
-            Job details
-            </button>
-        </a>
+        <div class="flex self-end bg-opacity-0">
+
+            <div class="flex items-center justify-center w-full mb-24">
+  
+                <!-- Toggle Button -->
+                
+              </div>
+
+            <!-- loading .gif -->
+            <!-- <a href="/details.html">
+                <button class="m-8 p-2 px-4 h-12 bg-blue-400 rounded-2xl shadow-lg text-lg text-center focus:outline-none focus:ring-0 transform hover:bg-green-400 hover:text-white transition duration-500 ease-in-out">
+                Job details
+                </button>
+            </a> -->
+        </div>
     </div>
-</div>
-
-<div class="p-4 divide-solid divide-y-2 divide-black">
-    <div class="">1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
 </div>
 <!-- // END list -->
 
 <!-- footer by: Ahmed, A. -->
-<div class=>
+<div class="fixed bottom-0 border-t-4 border-black">
     <!-- Adding Social Media Buttons  -->
     <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <div class="flex justify-center w-screen bg-gray-300 p-5 overflow-auto items-center">
+    <div class="flex self-end justify-center w-screen bg-gray-300 p-5 overflow-auto items-center">
         <a href="#"><i id="linkedin" class="fa fa-linkedin hover:bg-blue-500"></i>
         </a>
         <a href="#"><i id="twitter" class="fa fa-twitter"></i>

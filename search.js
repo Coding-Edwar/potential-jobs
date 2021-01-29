@@ -47,12 +47,13 @@ searchForm.addEventListener('submit', async function (e) {
           <p class="w-96 m-2 p-2 text-xl">
             ${job.title}
           </p>
-          <div class="flex border-2 border-black">
+          <div class="flex">
             <img src="map-marker.png" alt="location-icon" class="w-5 h-6 self-center">
-            <p class="-mb-1 p-2 flex jsutify-evenly">
+            <p class="-mb-1 p-2 flex text-left">
                 ${job.location.display_name}
             </p>
           </div>
+          <img src="/add_favorite.png" alt="" width="50" class="ml-auto ">
         </div>
 
         <p class="text-justify text-lg">${job.description}</p>
@@ -66,12 +67,8 @@ searchForm.addEventListener('submit', async function (e) {
 async function searchJobs (jobString, jobsCount, country = SEARCH_COUNTRY) {
 
   // see https://gist.github.com/imdeletosh/f13c339b5f8e0a62ebe973a4ac86c3c0 for a breakdown of this
-  const url = `https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=8662d781&app_key=508ffbd2b7030c6d6615b21bd0aa002d&results_per_page=5&what=${jobString}&what_exclude=it&sort_by=date&salary_min=40000&salary_max=200000&salary_include_unknown=1&full_time=1&permanent=1&content-type=application/json`
+  const url = `https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=44ef26e9&app_key=eb8b61a9c4d959f8944a2c2f714f19d5&results_per_page=20&what=${jobString}&what_and=engineer&what_or=developer&where=us&salary_min=40000&salary_max=150000&salary_include_unknown=1&full_time=1&permanent=1`
   console.log(url)
-
-// https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=8662d781&app_key=508ffbd2b7030c6d6615b21bd0aa002d&results_per_page=20&what=${jobString}&what_exclude=java&sort_by=date&salary_min=40000&salary_max=200000&salary_include_unknown=1&full_time=1&permanent=1&content-type=application/json
-
-//   https://api.adzuna.com/v1/api/jobs/${country}/search/1?app_id=a7547f34&app_key=92b62ee9bfd90c11c097004b51438beb&results_per_page=${jobsCount}&what=${jobString}&content-type=application/json
   
   const result = await fetch(url)
   const data = await result.json()
