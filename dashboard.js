@@ -5,7 +5,7 @@ function authStateListener() {
 
             document.querySelector('#user')
                 .innerHTML = `${user.displayName}`
-            // console.log(user)
+            console.log(user)
         } else {
         // user non-exist
         window.location.href = "/search-list.html"
@@ -13,10 +13,10 @@ function authStateListener() {
     })
 }
 
-function signOut() {
-    firebase.auth().signOut().then(()=> {
-        console.log(user)
-    }).catch((error)) => {
-        console.log("error!!!!")
-    }
-}
+// function signOut() {
+//     firebase.auth().signOut().then(()=> {
+//         console.log(user)
+//     }).catch((error)) => {
+//         console.log("error!!!!")
+//     }
+// }
