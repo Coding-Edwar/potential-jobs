@@ -1,6 +1,6 @@
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+// TODO: Add SDKs for Firebase products that you want to use
 
+(function() {
 
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -13,3 +13,4 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+}());
