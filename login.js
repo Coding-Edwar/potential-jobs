@@ -1,97 +1,30 @@
-// 1. get DOM element
-const form = document.querySelector('#form')
+// TODO: Add SDKs for Firebase products that you want to use
 
-// const jobsList = document.querySelector('a')
+(function() {
 
-// GamepadButton.addEventListener('click')
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCIqAD32z4vB-9byghSnHG7E0KdifO0vrc",
+    authDomain: "potential-jobs.firebaseapp.com",
+    projectId: "potential-jobs",
+    storageBucket: "potential-jobs.appspot.com",
+    messagingSenderId: "651341001162",
+    appId: "1:651341001162:web:4434e812bff7ded5159f33"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
-// onclick
+  // get elements
+  const name = document.getElementById('#name')
+  const password = document.getElementById('#password')
+  const btnLogin = document.getElementById('#btnLogin')
+  const btnSignUp = document.getElementById('#btnSignUp')
+  const btnLogout = document.getElementById('#btnLogout')
 
-// button 
-// querySelector
-
-// wrap this around click function
-
-console.log(form)
-
-form.addEventListener('submit', function () {
-  // e.preventDefault()
-
-// const newElement = document.createElement("div")
-
-// const mylink = document.querySelector('#bttn')
-
-// mylink.innerHTML=`$`
-
-//   `<a href="./search-list.html"></a>`
-
-  validateEmpty(username)
-  validateEmpty(email)
-  validateEmpty(password1)
-  validateEmpty(password2)
-
-  // validateMinLength(username)
-  // validateMinLength(password2)
-  // validateIsEmail(email)
-
-  validatePassMatch(password2, password1)
-
-  //@TODO: Code Challenge 5c: Starting from your refactored code,
-  // 1. Implement and use the  validatePassMatch() function to confirm both passwords match
-  // 2. Implement and use the emailValidates() function to confirm it's a valid email. See: https://stackoverflow.com/a/46181
-
-  //@TODO: Code Challenge 5b: Refactor your CC 5a to use function with the "blueprints" below
-  // validateIsEmail(email)
-
-})
-
-function validateEmpty(input) { 
-  if (input.value === '') {
-    showError(input, `${input.name} is empty`)
-  } else {
-    showSuccess(input)
-  }
-}
-
-function showError (input, msg) {
-  input.nextElementSibling.innerHTML = `<small class="text-white uppercase">❌ ${msg}</small>`
-  input.className='error'
-}
-
-function showSuccess (input) {
-  input.nextElementSibling.innerHTML = `<small class="text-white ">✅ </small>`
-  input.className= 'success-input'
-}
-
-function validateIsEmail (email) {
-  // const re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  // console.log(re)
-  if (emailValidates(email)) {
-    showSuccess(email)
-  } else {
-    showError(email)
-  }
-}
-
-function emailValidates (email) {
-  const re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  
-  return true
-}
-// console.log(emailValidates)
-  
-function validatePassMatch (password1, password2) {
-  if (password2.value != password1.value) {
-    showError(password2, "does not match")
-  } 
-}
-
-
-function validateMinLength (input) {
-  console.log(input.value.length)
-  if (input.value.length < 5 || input.value.length > 14) {
-  showError(input)
-  } else {
-    showSuccess(input)
-  }
-}
+  // add login event
+  btnLogin.addEventListener('click'e => {
+    const name = name.value
+    const pass = password.value
+    const auth = firebase.auth
+  })
+}());
