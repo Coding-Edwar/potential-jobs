@@ -8,7 +8,7 @@ let uiConfig = {
     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
     firebase.auth.GithubAuthProvider.PROVIDER_ID
   ],
-  signInSuccessUrl: "/index.html"
+  signInSuccessUrl: "/search-list.html"
 }
 ui.start('#login-ui',uiConfig)
 
